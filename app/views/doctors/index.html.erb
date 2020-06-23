@@ -1,0 +1,5 @@
+<h2>All Doctors</h2>
+
+<% @doctors.each.with_index(1) do |doctor, i| %>
+	<p><%= i %>: <%= link_to doctor.name, doctor %></p>
+<% end %>
